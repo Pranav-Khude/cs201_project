@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintaince</title>
+  <link rel="stylesheet" type="text/css" href="main.css"> 
+  
+</head>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<script  type="module" src="scripts/main.js"></script>
+<body>
+  <header>
+    <div style="display:flex;">
+      <p style="text-align:center;">
+        <img src="IIITV_Image.jpeg" alt="IIITV Logo" width="200px">
+        <h1 style="align-self: center;margin-left: 44px;">Indian Institute Of Information Technology,Vadodara</h1>
+      </p>
+    </div>
+
+  </header>
+
+
+  <div class="searchbar">
+    
+  </div>
+
+
+  <div class="bottom_container" style="display:center ;">
+    <div class="container-table100">
+      <div class="wrap-table100">
+        <div class="table">
+          <div class="row header">
+            <div class="cell" style="border-top-left-radius: 10px;">
+              Sr.No
+            </div>
+            <div class="cell">
+              Student ID
+            </div>
+            <div class="cell">
+              Name
+            </div>
+            <div class="cell" style="border-top-right-radius: 10px;">
+              Phone Number
+            </div>
+          </div>
+          <div class="row">
+            <div class="cell" data-title="Full Name">
+              1
+            </div>
+            <div class="cell" data-title="Full Name">
+              Vincent Williamson
+            </div>
+            <div class="cell" data-title="Age">
+              31
+            </div>
+            <div class="cell" data-title="Job Title">
+              iOS Developer
+            </div>
+          </div>
+          <div class="row">
+            <div class="cell" data-title="Full Name">
+              2
+            </div>
+            <div class="cell" data-title="Full Name">
+              Joseph Smith
+            </div>
+            <div class="cell" data-title="Age">
+              27
+            </div>
+            <div class="cell" data-title="Job Title">
+              Project Manager
+            </div>
+          </div>
+          <div class="row">
+            <div class="cell" data-title="Full Name">
+              3
+            </div>
+            <div class="cell" data-title="Full Name">
+              Justin Black
+            </div>
+            <div class="cell" data-title="Age">
+              26
+            </div>
+            <div class="cell" data-title="Job Title">
+              Front-End Developer
+            </div>
+          </div>
+          
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+<script>
+  blocks=document.getElementsByClassName("cell")
+  let l=document.getElementsByTagName("body")[0].offsetWidth;
+  console.log(l)
+
+</script>
+</html>
