@@ -22,16 +22,16 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore(app);
-var docRef = db.collection("User").doc("kedar");
-
-docRef.get().then((doc) => {
-    if (doc.exists) {
-        console.log("Document data:", doc.data());
-    } else {
-        console.log("No such document!");
-    }
-}).catch((error) => {
-    console.log("Error getting document:", error);
-});
-
-
+var count=1;
+for(var i=202151001;i<202153244;i++){
+    var docRef = db.collection("User").doc(i.toString());
+    docRef.get().then((doc) => {
+        if (doc.exists) {
+            var a=document.getElementsByClassName("table");
+            a[0].innerHTML+='<tr><th scope="row">'+count+'</th><td>'+doc.data().student_id+'</td><td>'+doc.data().name+'</td><td>'+doc.data().phone_number+'</td></tr>';
+            count++;
+        }
+    }).catch((error) => {
+        console.log("Error getting document:", error);
+    });
+}
